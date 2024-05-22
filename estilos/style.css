@@ -1,8 +1,59 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 /* Paleta de cores:
   verde: #49a09d
   lilás: #2B2236
   roxo claro:#362B45
   */
+
+
+* {
+  font-family: "Amatic SC", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+body,
+html {
+  background-color: #362B45;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2B2236;
+  border: 1px solid black;
+  width: 265px;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px rgb(0, 0, 0, 0.450);
+}
+
+section#login>div#imagem {
+  display: block;
+  background: #2B2236 url(../imagens/ceu.jpg) no-repeat;
+  height: 200px;
+  background-size: cover;
+
+}
+
+section#login>div#formulario {
+  display: block;
+  padding: 10px;
   
+}
