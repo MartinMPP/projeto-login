@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 
 <body>
@@ -20,7 +21,19 @@
       <div id="formulario">
         <h1>Login</h1>
         <p>Seja bem-vindo(a). Faça login para acessar sua conta.</p>
-        <form action="login.php" method="post">Login:</form>
+        <form action="login.php" method="post">Login:
+          <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="40"
+              placeholder="Nome do usuário" autocomplete="username">
+          </p>
+          <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="40"
+              placeholder="digite sua senha" autocomplete="current-password">
+          </p>
+
+        </form>
 
       </div>
     </section>

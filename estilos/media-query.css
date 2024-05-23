@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*todas as demais midias*/
+
+/*Typical Device Breakpoint
+
+telas Extra Pequenas : até 600px
+telas Pequenas : maio que 600px
+telas medias: mais que 768px
+telas grandes: mais que 992px
+telas extra grandes: mais que 1200px*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section#login {
+    width: 400px;
+    height: 200px;
+
+  }
+
+  section#login>div#imagem {
+    float: left;
+    width: 35%;
+    height: 100%;
+
+  }
+
+  section#login>div#formulario {
+    float: right;
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  section#login {
+    
+    width: 600px;
+    height: 400px;
+
+  }
+
+  section#login>div#formulario {
+    float: left;
+    width: 55%;
+    height: 100%;
+
+  }
+
+  section#login>div#imagem {
+    float: right;
+    width: 45%;
+    height: 100%;
+  }
+
+}
