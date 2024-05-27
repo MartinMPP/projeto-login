@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos/media-query.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
@@ -21,16 +22,35 @@
       <div id="formulario">
         <h1>Login</h1>
         <p>Seja bem-vindo(a). Faça login para acessar sua conta.</p>
-        <form action="login.php" method="post">Login:
+        <form action="login.php" method="post">
           <p>
-            <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="40"
-              placeholder="Nome do usuário" autocomplete="username">
+          <div class="campo">
+            <span class="material-symbols-outlined">
+              account_circle
+            </span>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="0" size="40"
+              placeholder="Digite seu e-mail." autocomplete="email">
+            <label for="iusu">Login</label>
+          </div>
           </p>
           <p>
-            <label for="isen">Senha:</label>
+          <div class="campo">
+            <span class="material-symbols-outlined">
+              key
+            </span>
             <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="40"
               placeholder="digite sua senha" autocomplete="current-password">
+            <label for="isen">Senha</label>
+            <div class="esqueci">
+              <a href="#" class="botao">esqueci miha senha</a>
+            </div>
+          </div>
+          </p>
+          <p>
+          <div class="botao">
+            <input type="submit" value="Entrar">
+
+          </div>
           </p>
 
         </form>

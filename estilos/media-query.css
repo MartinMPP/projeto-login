@@ -15,8 +15,8 @@ telas extra grandes: mais que 1200px*/
   }
 
   section#login {
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 235px;
 
   }
 
@@ -31,12 +31,19 @@ telas extra grandes: mais que 1200px*/
     float: right;
     width: 65%;
   }
+
+  div.campo {
+    display: block;
+
+  }
+
 }
 
 @media screen and (min-width: 993px) {
   body {
     background-image: linear-gradient(to top, #2B2236, #6b5688);
   }
+
   section#login {
 
     width: 800px;
@@ -56,6 +63,22 @@ telas extra grandes: mais que 1200px*/
     float: right;
     width: 45%;
     height: 100%;
+  }
+
+  div#formulario>h1 {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-size: 2em;
+  }
+
+  div#formulario>p {
+    margin: 15px;
+    font-size: 1.2em;
+  }
+
+  div.campo {
+    display: block;
+    text-align: center;
   }
 
 }
